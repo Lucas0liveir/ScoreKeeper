@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/green" />
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="1dp"
+        android:layout_height="425dp"
+        android:layout_above="@id/Reset_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/Score_kicks_cor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/bar"
+        android:layout_marginRight="20dp"
+        android:paddingTop="245dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Score_g_kicks_cor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/bar"
+        android:layout_marginRight="20dp"
+        android:paddingTop="308dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Score_faults_cor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/bar"
+        android:layout_marginRight="20dp"
+        android:paddingTop="365dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Score_yc_cor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/bar"
+        android:layout_marginRight="20dp"
+        android:paddingTop="425dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Score_rc_cor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/bar"
+        android:layout_marginRight="20dp"
+        android:paddingTop="485dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Score_kicks_pal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bar"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="245dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Score_g_kicks_pal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bar"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="308dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Score_faults_pal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bar"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="365dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Score_yc_pal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bar"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="425dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Score_rc_pal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bar"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="485dp"
+        android:text="0"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="X"
+        android:textColor="#FFD700"
+        android:textSize="56sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/cor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="78dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/pal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+
+            <TextView
+                android:id="@+id/corinthians_goals_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="61dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="#FFD700"
+                android:textSize="56sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Button_goal_Cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:onClick="Goal_corinthians"
+                android:text="Goal"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/Kicks_cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="60dp"
+                android:onClick="kicks_cor"
+                android:text="Kicks"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/Goal_Kicks_Cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="60dp"
+                android:onClick="Goal_Kicks_cor"
+                android:text="Goal Kicks"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/faults_Cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="60dp"
+                android:onClick="faults_cor"
+                android:text="faults"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/yellow_cards_Cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="60dp"
+                android:onClick="yellow_cards_cor"
+                android:text="yellow cards"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/Red_cards_Cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="60dp"
+                android:onClick="Red_cards_cor"
+                android:text="Red cards"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/palmeiras_goals_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="61dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="#FFD700"
+                android:textSize="56sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Button_goal_pal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:onClick="Goal_Palmeiras"
+                android:text="Goal"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/Kicks_pal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="kicks_pal"
+                android:text="Kicks"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/Goal_Kicks_pal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:onClick="Goal_Kicks_pal"
+                android:text="Goal Kicks"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/faults_pal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:onClick="faults_pal"
+                android:text="faults"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/yellow_cards_pal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:onClick="yellow_cards_pal"
+                android:text="yellow cards"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/Red_cards_pal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:onClick="Red_cards_pal"
+                android:text="Red cards"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="Reset"
+        android:text="Reset"
+        android:textColor="@color/black" />
+</RelativeLayout>
